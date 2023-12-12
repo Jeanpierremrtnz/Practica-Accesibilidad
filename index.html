@@ -1,91 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Mi Portafolio</title>
-    <link href="styles.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <a href="#" class="modal-project-image" tabindex="0">
-        <img src="imagen\Jean Pierre Martinez.jpg" alt="Jean Pierre Martinez" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Mi Portafolio</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav>
+    <ul class="lista-menu">
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Mis Proyectos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <a href="#" class="modal-project-image" tabindex="0">
+      <img src="imagen\Jean Pierre Martinez.jpg" alt="Jean Pierre Martinez" />
+    </a>
+    <h1>Jean Pierre Martinez</h1>
+    <hr>
+    <h2>CUARTO A</h2>
+  </header>
+
+  <section id="about">
+    <h2>Acerca de Mi</h2>
+    <hr>
+    <h4>
+      Hola! Un gusto que revises mi portafolio. Te cuento un poco sobre mí: soy ecuatoriano, me gustan los deportes extremos y crear cosas nuevas para la web. Llevo un poco más de tres años enfocándome en front-end, específicamente en JavaScript y accesibilidad. Sueño con una web donde todo el mundo pueda participar. Aquí puedes ver algunos de mis proyectos recientes y también puedes contactarme por si quieres hablar de tecnología o accesibilidad.
+    </h4>
+    <div class="social-media">
+      <a href="https://twitter.com" target="_blank" tabindex="0">
+        <img src="imagen/twitter.png" alt="Twitter" />
       </a>
-      <h1>Jean Pierre Martinez</h1>
-      <hr>
-      <h2>CUARTO A</h2>
-    </header>
+      <a href="https://github.com" target="_blank" tabindex="0">
+        <img src="imagen/github-logo.png" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" tabindex="0">
+        <img src="imagen/linkedin.png" alt="LinkedIn" />
+      </a>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="contenido-footer">
-        <ul class="lista-menu" tabindex="0">
-          <li><a href="#">Acerca de</a></li>
-          <li><a href="#">Mis Proyectos</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </div>
-    </footer>
+  <section id="projects">
+    <hr>
+    <h2>Mis Proyectos</h2>
 
-    <section id="about">
-      <h2>Acerca de Mi</h2>
-      <hr>
-      <h4>
-        Hola! Un gusto que revises mi portafolio te cuento un poco sobre mi soy Ecuatoriano me gustan
-        los deportes extremos, tambien crear cosas nuevas para la web  Llevo un poco más de tres años
-        enfocándome en front end, específicamente en JavaScript y accesibilidad. Sueño con una web donde
-        todo el mundo pueda participar. Aquí puedes ver algunos de mis proyectos recientes y también puedes
-        contactarme por si quieres hablar de tecnología o accesibilidad!
-      </h4>
-      <div class="social-media">
-        <a href="https://twitter.com" target="_blank" tabindex="0">
-          <img src="imagen/twitter.png" alt="Twitter" />
-        </a>
-        <a href="https://github.com" target="_blank" tabindex="0">
-          <img src="imagen/github-logo.png" alt="GitHub" />
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" tabindex="0">
-          <img src="imagen/linkedin.png" alt="LinkedIn" />
-        </a>
-      </div>
-    </section>
-
-    <section id="projects">
-      <hr>
-      <h2>Mis Proyectos</h2>
-
-      <div class="carousel" tabindex="0">
-        <div class="arrow arrow-left" tabindex="0"></div>
-        <div class="window">
-          <div class="project-container">
-            <div class="project project1" tabindex="0"></div>
-            <div class="project project2" tabindex="0"></div>
-            <div class="project project3" tabindex="0"></div>
-            <div class="project project4" tabindex="0"></div>
-            <div class="project project5" tabindex="0"></div>
-          </div>
+    <div class="carousel" tabindex="0">
+      <div class="arrow arrow-left" tabindex="0"></div>
+      <div class="window">
+        <div class="project-container">
+          <div class="project project1" tabindex="0"></div>
+          <div class="project project2" tabindex="0"></div>
+          <div class="project project3" tabindex="0"></div>
+          <div class="project project4" tabindex="0"></div>
+          <div class="project project5" tabindex="0"></div>
         </div>
-        <div class="arrow arrow-right" tabindex="0"></div>
       </div>
-    </section>
+      <div class="arrow arrow-right" tabindex="0"></div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contacto</h2>
+  <section id="contact">
+    <h2>Contacto</h2>
 
-      <div class="form-container" tabindex="0">
-        <label class="name" for="name">Nombre</label>
-        <input class="text" id="name" type="text" tabindex="0" />
-        <hr>
-        <label class="email" for="email">Correo</label>
-        <input class="text" id="email" type="email" tabindex="0" />
-        <hr>
-        <label for="message">Mensaje</label>
-        <textarea id="message" tabindex="0"></textarea>
-        <hr>
-        <button class="send-button" tabindex="0">Enviar</button>
-        <hr>
-      <div class="notification">El formulario fue enviado sin errores```
+    <div class="form-container" tabindex="0">
+      <label class="name" for="name">Nombre</label>
+      <input class="text" id="name" type="text" tabindex="0" />
+      <hr>
+      <label class="email" for="email">Correo</label>
+      <input class="text" id="email" type="email" tabindex="0" />
+      <hr>
+      <label for="message">Mensaje</label>
+      <textarea id="message" tabindex="0"></textarea>
+      <hr>
+      <button class="send-button" tabindex="0">Enviar</button>
+      <hr>
+    </div>
+    <div class="notification">El formulario fue enviado sin errores</div>
+  </section>
+
+  <footer class="footer">
+    <div class="contenido-footer">
+      <ul class="lista-menu" tabindex="0">
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Mis Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
